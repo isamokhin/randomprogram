@@ -26,6 +26,7 @@ appeal = random.choice(appeals)
 intro = " ".join(random.sample(set(intros), 5))
 promintro = random.choice(promintros)
 promises = "\n".join(random.sample(set(proms), 20))
+promises = promises.replace("\n\n", "\n")
 ending = random.choice(ends)
 
 text = "{ap}\n\n{intr}\n\n{promintr}\n\n{promises}\n\n{ending}".format(ap=appeal, intr=intro, promintr=promintro, promises=promises, ending=ending)
